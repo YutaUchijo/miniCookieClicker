@@ -17,12 +17,14 @@ class Game(){
         when(tar){
             "baa"   ->{
                 baaNum += amo
+                cookieNum -= 50
                 println("You purchased ${amo} ${tar}(s).")
                 refresh()
             }
 
             "field" ->{
                 fieldNum += amo
+                cookieNum -= 1000
                 println("You purchased ${amo} ${tar}(s).")
                 refresh()
             }
